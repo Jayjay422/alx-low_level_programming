@@ -6,7 +6,7 @@
  *
  * prints the value of n maybe either zero, positive or negative
  *
- * 
+ *
  * Return: Always returns 0
 */
 
