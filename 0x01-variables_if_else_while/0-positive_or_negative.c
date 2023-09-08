@@ -4,8 +4,9 @@
 /**
  * main - Entry point
  *
- * Description: printsthe  value of number n satus maybe either zero, positive or negative
+ * prints the value of n maybe either zero, positive or negative
  *
+ * 
  * Return: Always returns 0
 */
 
