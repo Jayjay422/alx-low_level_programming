@@ -1,29 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+/**
+* main - Generates random valid passrds for the
+*        program
+* Return: random password
+*/
 int main(void)
 {
-    int pass[100];
-    int i, sum, n;
+	int random_number;
+	int counter;
+	int total;
 
-    sum = 0;
+	srand(time(NULL));
+	for (counter = 0, total = 2772; total > 122; counter++)
+	{
+		random_number = (rand() % 125) + 1;
+		printf("%c", random_number);
+		total -= random_number;
+	}
+	printf("%c", total);
 
-    srand(time(NULL));
-
-    for (i = 0; i < 100; i++)
-    {
-        pass[i] = rand() % 78;
-        sum += pass[i];
-        putchar(pass[i] + '0');
-        if ((2772 - sum) - '0' < 78)
-        {
-            n = 2772 - sum;
-            sum += n;
-            putchar(n + '0');
-            break;
-        }
-    }
-
-    return 0;
+	return (0);
 }
