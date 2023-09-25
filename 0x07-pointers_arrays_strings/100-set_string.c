@@ -1,4 +1,4 @@
-#include "jay.h"
+#include "main.h"
 /**
  * set_string - Sets the value of a pointer to a char
  * Description - Sets the value of a pointer to a char
